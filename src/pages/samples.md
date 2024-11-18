@@ -280,7 +280,7 @@ The sample add-on that the [Document APIs Concepts](./references/document-sandbo
 
 ## [communication-iframe-documentSandbox](https://github.com/AdobeDocs/express-add-on-samples/tree/main/document-sandbox-samples/communication-iframe-documentSandbox)
 
-Demonstrates using the Communication APIs to expose and proxy APIs bidirectionally between the iframe and document sandbox code environments via [`runtime.apiProxy()`](/references/addonsdk/instance-runtime.md#apiproxy) and [`runtime.exposeApi()`](/references/addonsdk/instance-runtime.md#exposeapi).
+Demonstrates using the Communication APIs to expose and proxy APIs bidirectionally between the iframe and document sandbox code environments via [`runtime.apiProxy()`](./references/addonsdk/instance-runtime.md#apiproxy) and [`runtime.exposeApi()`](./references/addonsdk/instance-runtime.md#exposeapi). 
 
 ## [editor-apis](https://github.com/AdobeDocs/express-add-on-samples/tree/main/document-sandbox-samples/editor-apis)
 

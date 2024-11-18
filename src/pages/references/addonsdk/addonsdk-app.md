@@ -405,7 +405,7 @@ The payload data sent to the App `dragEnd` event handler.
 
 <InlineAlert slots="text" variant="info"/>
 
-See the [Drag & Drop use case implementation](../../guides/develop/use_cases/user_interaction.md#drag-and-drop) for example usage, and the [code samples](/samples.md) provided for reference.
+See the [Drag & Drop use case implementation](../../guides/develop/use_cases/user_interaction.md#drag-and-drop) for example usage, and the [code samples](../../samples.md) provided for reference.
 
 ## Events
 
