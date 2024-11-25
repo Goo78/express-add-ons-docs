@@ -46,23 +46,19 @@ Spectrum is based on the Adobe Clean and Adobe Clean Han typefaces. The former i
   </div>
 </div> -->
 
-### Headings
+### Headings and Body Text
 
 Headings in Spectrum for Adobe Express use bolder typography. The default weight is 700 (Adobe Clean Black, Sans Serif), with a size ranging from M to XXS.
 
-![](./img/visual_heading.png)
-
-### Body Text
-
 The available sizes for body text in Spectrum for Adobe Express span from XS to XXL, while the weight is usually around 400-500.
 
-![](./img/visual_body.png)
+![](./img/visual_heading-body.png)
 
 ### Usage
 
 Here's an example of how you can implement the Adobe Clean typeface in your add-on; please note the recommended spacing between text and other user interface elements.
 
-![](./img/visual_example.png)
+![](./img/visual_example2.png)
 
 ## Layout & Structure
 
@@ -78,7 +74,7 @@ Add-ons on Desktop are assigned a specific width of **320px** and a **100%** hei
 - The body holding the add-on's content.
 - Optionally, a footer with Call to Action (CTA) buttons.
 
-![Basic Structure](./img/layout_basic.png)
+![Basic Structure](./img/layout_basic2.png)
 
 ### Padding
 
@@ -89,7 +85,7 @@ Padding plays a crucial role in maintaining visual harmony and readability. You 
 
 This padding structure ensures that content is well-separated and easy to interact with.
 
-![Padding](./img/layout_padding.png)
+![Padding](./img/layout_padding2.png)
 
 ### Responsive Grid and Core Container Styles
 
@@ -101,7 +97,7 @@ Adobe Express add-ons rely on a [responsive grid system](https://spectrum.adobe.
 
 Remember to apply the standard gap of 16px between grid elements for consistency.
 
-![Responsive Grid and Core Container Styles](./img/layout_grid.png)
+![Responsive Grid and Core Container Styles](./img/layout_grid2.png)
 
 ### Panel Structure and core content actions
 
@@ -119,7 +115,7 @@ Structural grids in Adobe Express add-ons are designed to accommodate various co
 
 Please note the specific paddings on each of these grid types.
 
-![Structural Grids and Foundational Patterns](./img/layout_patterns.png)
+![Structural Grids and Foundational Patterns](./img/layout_patterns2.png)
 
 ## Panel Actions
 
@@ -147,7 +143,7 @@ Panel Actions, when available, should be arranged at the top of the add-on's con
 
 Here are some examples of common panel organizations and hierarchies for Adobe Express add-ons.
 
-![Examples](./img/visual_actions.png)
+![Examples](./img/visual_actions2.png)
 
 ## Components
 
@@ -165,7 +161,7 @@ Buttons are essential for enabling user interactions in your add-on. -->
 
 [Buttons](https://spectrum.adobe.com/page/button/#Usage-guidelines) allow users to perform an action or navigate to a different part of the add-on. They have multiple styles to fit various needs and are ideal for calling attention when a user needs to take action to move forward in the workflow.
 
-![Buttons](./img/components_buttons.png)
+![Buttons](./img/components_buttons2.png)
 
 Please mind the padding when using CTA buttons in the add-on's footer.
 
@@ -173,7 +169,7 @@ Please mind the padding when using CTA buttons in the add-on's footer.
 
 A [Button Group](https://spectrum.adobe.com/page/button-group/) is a collection of buttons that perform related actions. See the [Usage Guidelines](https://spectrum.adobe.com/page/button-group/#Usage-guidelines) for more information on their correct use.
 
-![Button Groups](./img/components_button-groups.png)
+![Button Groups](./img/components_button-groups2.png)
 
 ### Secondary Variant Buttons
 
@@ -183,6 +179,12 @@ The [Secondary Variant Button](https://spectrum.adobe.com/page/button/#Usage-gui
 
 Spectrum buttons support several variants (Accent, Primary, Secondary, Negative, Icon) to fit different use cases; refer to the [Spectrum reference](https://spectrum.adobe.com/page/button/#Options) to see all available options and when to use them.
 
+### Sliders
+
+Sliders allow users to quickly select a value within a range. They should be used when the upper and lower bounds of the range are known and fixed.
+
+![Sliders](./img/components_sliders2.png)
+
 ## Form Elements
 
 Form elements are essential for collecting user input and enabling interactions within your add-on. They include a variety of components such as text fields, search fields, pickers, and more.
@@ -191,7 +193,7 @@ Form elements are essential for collecting user input and enabling interactions 
 
 [Text fields](https://spectrum.adobe.com/page/text-field/) allow users to input custom text entries with a keyboard. Various options can be shown with the field to communicate their requirements.
 
-![Text Fields](./img/form_text-fields.png)
+![Text Fields](./img/form_text-fields2.png)
 
 It's recommended to let text fields span the entire add-on's width—minus the container's padding—when possible, for a more consistent look.
 
@@ -205,15 +207,17 @@ A [Search Field](https://spectrum.adobe.com/page/search-field/) is used for sear
 
 [Pickers](https://spectrum.adobe.com/page/picker/) (sometimes known as "dropdowns" or "selects") allow users to choose from a list of options in a limited space. The list of options can change based on the context.
 
-![Pickers](./img/form_pickers.png)
+![Pickers](./img/form_pickers2.png)
 
 Like all the components covered so far, it's best for pickers to take advantage of the add-on's full width.
+
+![Pickers](./img/form_pickers3.png)
 
 ### Color Pickers
 
 Color pickers are a special type of picker that allows users to select a color.
 
-![Color Pickers](./img/form_color-pickers.png)
+![Color Pickers](./img/form_color-pickers2.png)
 
 The Spectrum component used as a Color Picker is the [Swatch](https://spectrum.adobe.com/page/swatch/), which shows a small sample of a fill—such as a color, gradient, texture, or material—that is intended to be applied to an object.
 
@@ -227,10 +231,10 @@ Navigation is a key component of any user interface. It helps users understand w
 
 Tabs organize content into multiple sections and allow users to navigate between them; the content under the set of tabs should be related and form a coherent unit. Please always include a label for accessibility.
 
-![Tabs](./img/navigation_tabs.png)
+![Tabs](./img/navigation_tabs2.png)
 
 ### Accordions
 
 The [Accordion](https://opensource.adobe.com/spectrum-web-components/components/accordion/) element contains a list of items that can be expanded or collapsed to reveal additional content or information associated with each item. There can be zero expanded items, exactly one expanded item or more than one item expanded at a time, depending on the configuration. This list of items is defined by child elements that are targeted to the default slot of their parent.
 
-![Accordions](./img/navigation_accordions.png)
+![Accordions](./img/navigation_accordions2.png)

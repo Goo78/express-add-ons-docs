@@ -31,7 +31,7 @@ Loading indicators are particularly important when the system is processing a re
 
 [Progress circles](https://spectrum.adobe.com/page/progress-circle/) show the progression of a system operation such as downloading, uploading, processing, etc. in a visual way.
 
-![Progress circles](./img/feedback_progress-circles.png)
+![Progress circles](./img/feedback_progress-circles2.png)
 
 They can represent determinate or indeterminate progress: either the percentage of the operation that has been completed or spin indefinitely until completion.
 
@@ -41,7 +41,7 @@ They can represent determinate or indeterminate progress: either the percentage 
 
 When a group of cards are loading, they follow the [ghost loading convention](https://spectrum.adobe.com/page/cards/#Ghost-loading).
 
-![](./img/feedback_ghost-loading.png)
+![](./img/feedback_ghost-loading2.png)
 
 There are 5 phases for ghost loading:
 
@@ -55,24 +55,22 @@ There are 5 phases for ghost loading:
 
 [In-line alerts](https://opensource.adobe.com/spectrum-css/inlinealert.html) display a non-modal message associated with objects in a view. These are often used in form validation, providing a place to aggregate feedback related to multiple fields.
 
-![](./img/feedback_ghost-loading.png)
+![](./img/feedback_inline-alert-1.png)
+![](./img/feedback_inline-alert-2.png)
+![](./img/feedback_inline-alert-3.png)
 
 ## Toasts
 
 [Toasts](https://spectrum.adobe.com/page/toast/) display brief, temporary notifications. They’re meant to be noticed without disrupting a user’s experience or requiring an action to be taken.
 
-![](./img/feedback_toasts.png)
+![](./img/feedback_toasts-1.png)
 
 They come in multiple kinds, each with a different purpose:
 
-![](./img/feedback_toast-kinds.png)
+![](./img/feedback_toasts-2.png)
 
 ## Full-panel Messaging
 
-When the feedback is more complex or requires more space, a full-panel message can be used.
+When the feedback is more complex or requires more space, a full-panel message can be used. Please mind the padding between the graphics, text and other UI elements to ensure a clear and organized layout.
 
-![](./img/feedback_full-panel-messaging.png)
-
-Please mind the padding between the graphics, text and other UI elements to ensure a clear and organized layout.
-
-![](./img/feedback_full-panel-messaging-padding.png)
+![](./img/feedback_full-panel-messaging2.png)
