@@ -18,6 +18,11 @@ contributors:
 
 ## Changelog
 
+### 25 November 2024
+
+- Added new screenshots with improved accessibility.
+- Added a Slider component to the Visual Elements.
+
 ### 8 October 2024
 
 - Created a new web version of the Adobe Express add-on UX Guidelines.
