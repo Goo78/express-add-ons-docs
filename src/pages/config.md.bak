@@ -126,7 +126,7 @@
                 - [TextRange](references/document-sandbox/document-apis/interfaces/text-range.md)
                 - [UnorderedListStyleInput](references/document-sandbox/document-apis/interfaces/unordered-list-style-input.md)
                 - [UnsupportedTextLayout](references/document-sandbox/document-apis/interfaces/unsupported-text-layout.md)
-            - [Constants](references/document-sandbox/document-apis/enumerations/arrow-head-type.md)
+            - [Constants](references/document-sandbox/document-apis/constants/overview.md)
                 - [ArrowHeadType](references/document-sandbox/document-apis/enumerations/arrow-head-type.md)
                 - [BlendMode](references/document-sandbox/document-apis/enumerations/blend-mode.md)
                 - [CreateRenditionFormat](references/document-sandbox/document-apis/enumerations/create-rendition-format.md)

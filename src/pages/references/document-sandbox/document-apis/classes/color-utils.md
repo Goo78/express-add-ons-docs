@@ -10,10 +10,6 @@ hideEditInGitHub: true
 
 Utility methods for working with color values.
 
-## Extends
-
-- `unknown`
-
 ## Constructors
 
 ### Constructor

@@ -11,10 +11,6 @@ hideEditInGitHub: true
 Represents a bitmap image resource. Use [Editor.loadBitmapImage](editor.md#loadbitmapimage) to create a BitmapImage, and then [Editor.createImageContainer](editor.md#createimagecontainer)
 to display it in the document by creating a MediaContainerNode structure.
 
-## Extends
-
-- `unknown`
-
 ## Constructors
 
 ### Constructor

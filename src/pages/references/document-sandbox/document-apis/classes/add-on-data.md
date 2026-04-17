@@ -11,10 +11,6 @@ hideEditInGitHub: true
 AddOnData class provides APIs to read, write, remove private metadata to a Node.
 This metadata is accessible only to the add-on that has set it.
 
-## Extends
-
-- `unknown`
-
 ## Constructors
 
 ### Constructor

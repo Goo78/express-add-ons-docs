@@ -10,10 +10,6 @@ hideEditInGitHub: true
 
 Represents the area of the canvas that is currently visible on-screen.
 
-## Extends
-
-- `unknown`
-
 ## Constructors
 
 ### Constructor

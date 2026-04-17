@@ -24,8 +24,22 @@ const FOLDERS_TO_COPY = [
   "interfaces",
   "enumerations",
   "type-aliases",
-  "namespaces",
+  "constants",
 ];
+
+// Defensive wipe list: any folder that previous pipeline versions may have
+// produced at the destination. Kept separate from FOLDERS_TO_COPY so we can
+// remove stale trees (e.g. `namespaces/`, `@hz/`) even when the source no
+// longer emits them.
+const FOLDERS_TO_WIPE = [
+  ...FOLDERS_TO_COPY,
+  "namespaces",
+  "@hz",
+];
+
+// Files at the root of the destination that are regenerated on every run.
+// `index.md` is hand-maintained and MUST NOT be wiped.
+const FILES_TO_WIPE = ["overview.md"];
 
 function copyDir(src, dest) {
   if (!fs.existsSync(src)) {
@@ -65,14 +79,26 @@ try {
     process.exit(1);
   }
 
+  console.log("Cleaning destination (preserving index.md)...");
+  for (const folder of FOLDERS_TO_WIPE) {
+    const dest = path.join(DEST_BASE, folder);
+    if (fs.existsSync(dest)) {
+      fs.rmSync(dest, { recursive: true, force: true });
+      console.log(`  - Removed ${folder}/`);
+    }
+  }
+  for (const file of FILES_TO_WIPE) {
+    const dest = path.join(DEST_BASE, file);
+    if (fs.existsSync(dest)) {
+      fs.rmSync(dest, { force: true });
+      console.log(`  - Removed ${file}`);
+    }
+  }
+
   console.log("Copying documentation files...");
   for (const folder of FOLDERS_TO_COPY) {
     const src = path.join(DOCS_SOURCE_DIR, folder);
     const dest = path.join(DEST_BASE, folder);
-
-    if (fs.existsSync(dest)) {
-      fs.rmSync(dest, { recursive: true, force: true });
-    }
 
     if (fs.existsSync(src)) {
       copyDir(src, dest);

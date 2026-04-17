@@ -13,10 +13,6 @@ ReadOnlyItemList represents an ordered list of API objects that are all children
 Items in a bare ReadOnlyItemList cannot be added, removed, or reordered. The [ItemList](item-list.md) subclass adds more
 capabilities, and is most frequently encountered as [ArtboardNode.children](artboard-node.md#children) or [GroupNode.children](group-node.md#children).
 
-## Extends
-
-- `unknown`&lt;`HzApiInputType`&gt;
-
 ## Extended by
 
 - [`RestrictedItemList`](restricted-item-list.md)

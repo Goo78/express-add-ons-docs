@@ -10,10 +10,6 @@ hideEditInGitHub: true
 
 Entry point for APIs that read or modify the document's content.
 
-## Extends
-
-- `unknown`
-
 ## Extended by
 
 - [`ExpressEditor`](express-editor.md)
