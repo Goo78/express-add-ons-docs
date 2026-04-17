@@ -50,8 +50,24 @@ function removeFileExtension(file) {
   return `${file.substring(0, end)}${baseWithoutExt}`;
 }
 
+// Markdown link matcher for rewriting link targets.
+//
+// The label portion `[...]` supports two kinds of content, alternated freely:
+//   1. `code spans` — anything between backticks is treated as opaque, so a
+//      literal `]` inside a code span (e.g. `[iterator]`) doesn't prematurely
+//      close the label. This is important for TypeDoc-generated inheritance
+//      lines like `[`ReadOnlyItemList`](...).[`[iterator]`](...)`.
+//   2. non-backtick, non-`]` characters — ordinary label text.
+//
+// Capture groups (preserved from the original pattern so existing callers
+// keep working):
+//   $1  the full `[label](` prefix
+//   $2  optional leading `/` or `./`
+//   $3  the link target (substituted)
+//   $4  optional `#fragment`
+//   $5  the closing `)`
 const getFindPatternForMarkdownFiles = (from) =>
-  `(\\[[^\\]]*]\\()(/|./)?(${from})(#[^\\()]*)?(\\))`;
+  `(\\[(?:\`[^\`]*\`|[^\`\\]])*]\\()(/|./)?(${from})(#[^\\()]*)?(\\))`;
 
 const getReplacePatternForMarkdownFiles = (to) => `$1$2${to}$4$5`;
 
