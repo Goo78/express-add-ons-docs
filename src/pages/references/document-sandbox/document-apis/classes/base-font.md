@@ -11,10 +11,6 @@ hideEditInGitHub: true
 Represents a font that is able to be rendered within this document. However, the user may not have edit permissions for
 all such fonts.
 
-## Extends
-
-- `unknown`
-
 ## Extended by
 
 - [`AvailableFont`](available-font.md)

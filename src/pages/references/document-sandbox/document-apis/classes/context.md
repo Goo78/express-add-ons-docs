@@ -10,10 +10,6 @@ hideEditInGitHub: true
 
 Contains the user's current selection state, indicating the content they are focused on.
 
-## Extends
-
-- `unknown`
-
 ## Extended by
 
 - [`ExpressContext`](express-context.md)

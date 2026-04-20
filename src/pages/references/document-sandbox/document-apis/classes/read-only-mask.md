@@ -10,10 +10,6 @@ hideEditInGitHub: true
 
 A read-only view of a mask shape.
 
-## Extends
-
-- `unknown`
-
 ## Implements
 
 - [`INodeBounds`](../interfaces/i-node-bounds.md)

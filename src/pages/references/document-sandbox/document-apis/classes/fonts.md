@@ -10,10 +10,6 @@ hideEditInGitHub: true
 
 The Fonts class provides methods to work with fonts.
 
-## Extends
-
-- `unknown`
-
 ## Constructors
 
 ### Constructor

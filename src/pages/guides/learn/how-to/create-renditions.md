@@ -500,7 +500,7 @@ if (result.blob) {
 
 | Property | Type | Description |
 |----------|------|-------------|
-| `format` | [`CreateRenditionFormat`](../../../references/document-sandbox/document-apis/namespaces/Constants/enumerations/create-rendition-format.md) | Output format: `png` (default) or `jpeg` |
+| `format` | [`CreateRenditionFormat`](../../../references/document-sandbox/document-apis/enumerations/create-rendition-format.md) | Output format: `png` (default) or `jpeg` |
 | `scale` | `number` | Scale factor applied before rendering (e.g., `2` for 2x resolution) |
 
 **[`CreateRenditionResult`](../../../references/document-sandbox/document-apis/interfaces/create-rendition-result.md):**

@@ -11,10 +11,6 @@ hideEditInGitHub: true
 TextContentModel is an abstract base class representing a complete piece of text content.
 Use this model to get or modify the text string and the style ranges applied to it.
 
-## Extends
-
-- `unknown`
-
 ## Extended by
 
 - [`TextNodeContentModel`](text-node-content-model.md)

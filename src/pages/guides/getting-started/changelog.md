@@ -53,7 +53,7 @@ We have added new APIs to generate image rendition of visual nodes directly from
 - **Experimental** [`VisualNode.createRendition()`](../../references/document-sandbox/document-apis/classes/visual-node.md#createrendition) asynchronous method - Generate a rendition of a visual node and its descendants.
 - **Experimental** [`CreateRenditionOptions`](../../references/document-sandbox/document-apis/interfaces/create-rendition-options.md) interface - define configuration options for generating renditions.
 - **Experimental** [`CreateRenditionResult`](../../references/document-sandbox/document-apis/interfaces/create-rendition-result.md) interface - define the structure of the returned rendition data (e.g., blob, metadata).
-- **Experimental** [`CreateRenditionFormat`](../../references/document-sandbox/document-apis/namespaces/constants/enumerations/create-rendition-format.md) enumeration - specify supported output formats (e.g., PNG, JPEG, PDF) in the `Constants` namespace.
+- **Experimental** [`CreateRenditionFormat`](../../references/document-sandbox/document-apis/enumerations/create-rendition-format.md) enumeration - specify supported output formats (e.g., PNG, JPEG, PDF) in the `Constants` namespace.
 
 - **Experimental** [`addOnUISdk.app.document.isPresentation()`](../../references/addonsdk/app-document.md#ispresentation) asynchronous method - Returns `true` if the document is a presentation, `false` if not.
 
@@ -149,7 +149,7 @@ The Adobe Express Code Playground has received a major update with the release o
 ### Added
 
 - **Experimental** [`id`](../../references/document-sandbox/document-apis/classes/text-content-model.md#id) property - Unique identifier for text content models
-- **Experimental** [`TextStyleSource`](../../references/document-sandbox/document-apis/namespaces/constants/enumerations/text-style-source.md) enumeration - Options for text style source matching
+- **Experimental** [`TextStyleSource`](../../references/document-sandbox/document-apis/enumerations/text-style-source.md) enumeration - Options for text style source matching
 
 ### Updated
 
@@ -171,8 +171,8 @@ The Adobe Express Code Playground has received a major update with the release o
 - [`UnorderedListStyleInput`](../../references/document-sandbox/document-apis/interfaces/unordered-list-style-input.md) interface **promoted from experimental to stable** - Configuration for unordered lists
 - [`OrderedListStyle`](../../references/document-sandbox/document-apis/type-aliases/ordered-list-style.md) type **promoted from experimental to stable** - Type definition for ordered list styles
 - [`UnorderedListStyle`](../../references/document-sandbox/document-apis/type-aliases/unordered-list-style.md) type **promoted from experimental to stable** - Type definition for unordered list styles
-- [`OrderedListNumbering`](../../references/document-sandbox/document-apis/namespaces/constants/enumerations/ordered-list-numbering.md) enumeration **promoted from experimental to stable** - Numbering types for ordered lists
-- [`ParagraphListType`](../../references/document-sandbox/document-apis/namespaces/constants/enumerations/paragraph-list-type.md) enumeration **promoted from experimental to stable** - List type enumeration with `none` value added
+- [`OrderedListNumbering`](../../references/document-sandbox/document-apis/enumerations/ordered-list-numbering.md) enumeration **promoted from experimental to stable** - Numbering types for ordered lists
+- [`ParagraphListType`](../../references/document-sandbox/document-apis/enumerations/paragraph-list-type.md) enumeration **promoted from experimental to stable** - List type enumeration with `none` value added
 - Removed experimental warnings from documentation guides for all APIs promoted to stable, including the [Use Text](../learn/how-to/use-text.md) guide
 
 ## 2025-10-02
@@ -973,7 +973,7 @@ Some items in the following list of changes may have been mentioned in recent up
   - New [SolidColorShapeNode class](../../references/document-sandbox/document-apis/classes/solid-color-shape-node.md)
   - New [Point interface](../../references/document-sandbox/document-apis/interfaces/point.md)
   - New `queueAsyncEdit` method added to the [Editor](../../references/document-sandbox/document-apis/classes/editor.md) class.
-  - Renames the [Constants](../../references/document-sandbox/document-apis/namespaces/constants/overview.md) to remove the `Value` suffix.
+  - Renames the [Constants](../../references/document-sandbox/document-apis/constants/overview.md) to remove the `Value` suffix.
 
   **Updates to Node Classes**&lt;br /&gt;
 

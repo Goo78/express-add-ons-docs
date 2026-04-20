@@ -13,10 +13,6 @@ most fundamental nonvisual properties that even nodes near the top of the docume
 The more tangible visual content typically extends the richer Node class which extends BaseNode with additional
 properties.
 
-## Extends
-
-- `unknown`
-
 ## Extended by
 
 - [`ExpressRootNode`](express-root-node.md)
